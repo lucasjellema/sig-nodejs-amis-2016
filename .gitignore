@@ -1,0 +1,9 @@
+*.jdb
+*.lck
+*.log
+*.class
+classes/
+part4-JET/oraclejetwithnodejs/public/js/libs/
+part4-JET/oraclejetwithnodejs/public/scss/
+part4-JET/oraclejetwithnodejs/public/css/
+node_modules/
