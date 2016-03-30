@@ -118,7 +118,7 @@ function handleArtists(req, res, artistName) {
 			    // return the fact that this albumArray is done - up to forEachOf
                 callback();       
 	  	      }); //request
-          }, function (err) {
+          }, function (err) { // completion of the forEachOf
 	          // after the asynch.forEachOf, when all branches have done their callback()
 			  // done with all parallel processing; notify the top level (waterfall) that we are done here
                callback(null, albums);
