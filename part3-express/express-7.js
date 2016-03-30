@@ -32,7 +32,7 @@ var app = express()
     	                  body = body+chunk;
                        });
                  resp.on("end", function() { // when response is received, pass it on
-				 console.log("department details"+ body);
+				          console.log("department details"+ body);
 				          department.employees = JSON.parse(body);
                           res.send(department); //using send to stringify and set content-type
                        });

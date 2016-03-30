@@ -8,6 +8,7 @@ var options = {
 };
 
 var server = http.createServer(function handleRequest(req, res) {
+console.log(req.url);
     res.writeHead(200, { 'content-type': 'text/html' });
     http.get(options, function handleRemoteResponse(resp) {
        var body="";
