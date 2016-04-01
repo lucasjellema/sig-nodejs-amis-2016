@@ -26,9 +26,9 @@ var app = express()
 console.log('server running on port 3000');
 
 function getDepartment(departmentIdentifier) {
-  for (var i=0; i< departments.length; i++) {
-    if (departments[i].DEPARTMENT_ID == departmentIdentifier) {
-	  return departments[i];
+  for (var department of departments) {
+    if (department.DEPARTMENT_ID == departmentIdentifier) {
+	  return department;
     }//if	  
   }//for
   return {"DEPARTMENT_ID":0,"DEPARTMENT_NAME":"Does not exist ("+departmentIdentifier+")"}
